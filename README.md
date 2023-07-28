@@ -7,4 +7,20 @@ Struktur database memiliki 3 collection yang terdiri dari videos, products dan c
 ## iii. API request and response
 <a href="https://gist.github.com/axlgtm/433e5ad4eb6b3258fed8f06f7f1ca439">API gist</a>
 ## iv. how to run
-
+- Clone repo
+- Pindah branch dari main ke dev
+- Navigasi pada folder server
+- jalnkan command
+```
+npm i
+```
+- setelah node_modules yang dibutuhkan telah terunduh jalankan command
+```
+npm start
+```
+- Pastikan server telah berjalan dan databaset telah terhubung dengan baik dan pastikan console memiliki output seperti berikut
+```
+Server Started at 8000
+Database Connected
+```
+- Gunakan postman untuk memudahkan dalam mengetes API
