@@ -4,6 +4,7 @@ Struktur database memiliki 3 collection yang terdiri dari videos, products dan c
 <br>
 
 ## ii. API structure
+file pertama yang akan dijalankan adalah server.js yang akan memanggil router yang sudah dibuat pada folder app/routes, router akan memanggil controller yang berperan untuk melakukan proses bisnis atau memanipulasi database namun sebelum menjalankan controller models akan dipanggil untuk membuat collection pada db
 ## iii. API request and response
 <a href="https://gist.github.com/axlgtm/433e5ad4eb6b3258fed8f06f7f1ca439">API gist</a>
 ## iv. how to run
