@@ -5,4 +5,6 @@ Struktur database memiliki 3 collection yang terdiri dari videos, products dan c
 
 ## ii. API structure
 ## iii. API request and response
+<a href="https://gist.github.com/axlgtm/433e5ad4eb6b3258fed8f06f7f1ca439">API gist</a>
 ## iv. how to run
+
