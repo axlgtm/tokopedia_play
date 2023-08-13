@@ -3,6 +3,7 @@
 const express = require("express")
 const cors = require("cors")
 const db = require("./app/models")
+const seedDB = require("./app/config/seed")
 
 const app = express()
 
@@ -12,6 +13,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions))
 app.use(express.json());
+
+seedDB() // isi db
 
 // Konek ke db
 const mongooseConfig = {

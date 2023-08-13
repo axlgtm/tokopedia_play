@@ -102,4 +102,4 @@ const seedDB = async () => {
         console.log(error)
     }
 }
-seedDB()
+module.exports = seedDB
