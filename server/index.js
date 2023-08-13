@@ -16,7 +16,7 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json());
 
-seedDB() // isi db
+//seedDB() // isi db
 
 // Konek ke db
 const mongooseConfig = {
