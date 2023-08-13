@@ -30,10 +30,9 @@ exports.create = async (req, res) => {
     }
 }
 exports.findAll = (req, res) => {
-    // video.find()
-    //     .then(data => res.send(data))
-    //     .catch(err => res.status(500).send({message: err.message}))
-    res.send(['ada'])
+    video.find()
+        .then(data => res.send(data))
+        .catch(err => res.status(500).send({message: err.message}))
 }
 exports.show = (req, res) => {
     const id = req.params.id;

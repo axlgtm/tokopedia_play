@@ -29,7 +29,9 @@ const mongooseConfig = {
 //         console.log(err.message)
 //         process.exit()
 //     })
-
+app.get('/', (req, res) => {
+    res.send('Hey this is my API running 🥳')
+  })
 // memanggil routes
 require("./app/routes/video.routes")(app)
 require("./app/routes/product.routes")(app)
