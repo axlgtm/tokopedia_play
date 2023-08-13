@@ -1,0 +1,12 @@
+.product-card {
+    width: 30%;
+    padding: 8px 8px 0px;
+    background: dimgrey;
+    border-radius: 8px;
+    min-width: 160px;
+}
+
+.product-card__name {
+    font-size: 20px;
+    text-align: center;
+}
