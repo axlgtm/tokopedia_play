@@ -2,8 +2,8 @@
 // import cors from "cors";
 const express = require("express")
 const cors = require("cors")
-const db = require("./app/models")
-const seedDB = require("./app/config/seed")
+const db = require("../app/models")
+const seedDB = require("../app/config/seed")
 
 const app = express()
 
@@ -31,9 +31,9 @@ db.mongoose.connect(db.url, mongooseConfig)
     })
 
 // memanggil routes
-require("./app/routes/video.routes")(app)
-require("./app/routes/product.routes")(app)
-require("./app/routes/comment.routes")(app)
+require("../app/routes/video.routes")(app)
+require("../app/routes/product.routes")(app)
+require("../app/routes/comment.routes")(app)
 
 app.listen(8000, () => {
     console.log(`Server Started at ${8000}`)
