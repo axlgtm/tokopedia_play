@@ -8,7 +8,9 @@ const seedDB = require("./app/config/seed")
 const app = express()
 
 const corsOptions = {
-    origin: "http://127.0.0.1:5173" // Menerima request dari mana saja
+    origin: ["http://127.0.0.1:5173"],
+    methods: ["POST","GET"],
+    credentials: true
 }
 
 app.use(cors(corsOptions))
