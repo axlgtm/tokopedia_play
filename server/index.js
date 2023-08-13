@@ -8,7 +8,7 @@ const seedDB = require("./app/config/seed")
 const app = express()
 
 const corsOptions = {
-    origin: ["http://127.0.0.1:5173"],
+    origin: ["https://tokopedia-play.vercel.app"],
     methods: ["POST","GET"],
     credentials: true
 }
