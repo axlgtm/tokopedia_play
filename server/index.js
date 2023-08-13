@@ -29,6 +29,9 @@ const mongooseConfig = {
 //         console.log(err.message)
 //         process.exit()
 //     })
+app.listen(8000, () => {
+    console.log(`Server Started at ${8000}`)
+})
 app.get('/', (req, res) => {
     res.send('Hey this is my API running 🥳')
   })
@@ -37,6 +40,4 @@ app.get('/', (req, res) => {
 // require("./app/routes/product.routes")(app)
 // require("./app/routes/comment.routes")(app)
 
-app.listen(8000, () => {
-    console.log(`Server Started at ${8000}`)
-})
+
