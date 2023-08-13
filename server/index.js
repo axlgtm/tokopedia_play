@@ -23,12 +23,12 @@ const mongooseConfig = {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }
-// db.mongoose.connect(db.url, mongooseConfig)
-//     .then(() => console.log("Database Connected"))
-//     .catch((err) => {
-//         console.log(err.message)
-//         process.exit()
-//     })
+db.mongoose.connect(db.url, mongooseConfig)
+    .then(() => console.log("Database Connected"))
+    .catch((err) => {
+        console.log(err.message)
+        process.exit()
+    })
 app.get('/', (req, res) => {
     res.send('Hey this is my API running 🥳')
   })
