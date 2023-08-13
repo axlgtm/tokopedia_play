@@ -1,0 +1,45 @@
+.detail-page {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 47);
+    min-height: 100vh;
+}
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.product-swiper {
+    overflow: hidden;
+    position: relative;
+    padding: 8px;
+}
+
+.product-swiper__wrapper {
+    display: flex;
+    gap: 8px;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+}
+.product-swiper__wrapper::-webkit-scrollbar {
+    display: none;
+}
+.product-swiper__button {
+    background-color: chocolate;
+    border-radius: 50%;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 10px;
+}

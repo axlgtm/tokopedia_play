@@ -2,7 +2,10 @@
 module.exports = mongoose => {
     const schema = mongoose.Schema(
         {
-            thumbnail_url: String
+            uuid: String,
+            id_youtube: String,
+            video_youtube: String,
+            thumbnail_youtube: String
         }, {
             timestamps: true
         }
