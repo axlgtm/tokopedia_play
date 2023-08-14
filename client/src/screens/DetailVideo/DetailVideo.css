@@ -34,12 +34,34 @@
     display: none;
 }
 .product-swiper__button {
-    background-color: chocolate;
+    background-color: rgba(0,0,0,.7);
     border-radius: 50%;
     width: 40px;
+    height: 40px;
     position: absolute;
     top: 0;
     bottom: 0;
     margin: auto 0;
     right: 10px;
+    color: rgb(229, 224, 2);
+}
+.product-swiper__button::after {
+    content: ">";
+    font-size: 15px;
+    
+}
+.comment-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0;
+    gap: 8px;
+    color: cornsilk;
+}
+.comment-display {
+    display: flex;
+    flex-direction: column;
+}
+.comment-display__body{
+    display: flex;
+    flex-direction: column;
 }

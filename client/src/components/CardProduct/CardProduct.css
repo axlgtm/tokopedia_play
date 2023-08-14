@@ -4,6 +4,8 @@
     background: dimgrey;
     border-radius: 8px;
     min-width: 160px;
+    text-decoration: none;
+    color: black;
 }
 
 .product-card__name {

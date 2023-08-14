@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const HttpRequest = axios.create({
-    baseURL: "https://tokopedia-play-api.vercel.app"
+    baseURL: "http://localhost:8000"
 })
 
 export default HttpRequest;

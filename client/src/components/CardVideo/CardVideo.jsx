@@ -1,15 +1,18 @@
 import React from "react";
 import "./CardVideo.css";
+import {Link} from "react-router-dom"
 
-const CardVideo = () => {
+const CardVideo = ({imageUrl, uuid}) => {
     return (
-        <div className='card'>
-            <div className='card__layer'>
-            <div className='card__img--wrap'>
-                <img src="https://img.youtube.com/vi/Nq4Mh_jTubA/sddefault.jpg" alt="" />
-            </div>
-            </div>
-        </div>
+        // <Link to={`detail/${uuid}`}>
+            <Link to={`detail/${uuid}`} className='card'>
+                <div className='card__layer'>
+                <div className='card__img--wrap'>
+                    <img src={`${imageUrl}`} alt="" />
+                </div>
+                </div>
+            </Link>
+        // </Link>
     )
 }
 

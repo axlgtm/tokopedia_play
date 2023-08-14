@@ -1,14 +1,15 @@
 import React from "react";
 import "./CardProduct.css";
+import { Link } from "react-router-dom";
 
-const CardProduct = () => {
+const CardProduct = ({url, name}) => {
     return (
-        <div className="product-card">
+        <Link to={`${url}`} className="product-card">
             <div className="product-card__img--wrap">
                 <img src="https://img.youtube.com/vi/Nq4Mh_jTubA/sddefault.jpg" alt="" />
             </div>
-            <h1 className="product-card__name">Product Name</h1>
-        </div>
+            <h1 className="product-card__name">{name}</h1>
+        </Link>
     )
 }
 

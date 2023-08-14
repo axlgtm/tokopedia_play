@@ -8,13 +8,6 @@ const mongooseConfig = {
     useUnifiedTopology: true
 }
 
-db.mongoose.connect(db.url, mongooseConfig)
-    .then(() => console.log("Database Connected"))
-    .catch((err) => {
-        console.log(err.message)
-        process.exit()
-})
-
 const videoData = [
     {
         "uuid": uuidv4(),
@@ -89,17 +82,25 @@ const commentData = [
 
 const seedDB = async () => {
     try {
-        const deleteRecordVideo = await db.video.deleteMany({}); // memnghapus record video
-        const deleteRecordProduct = await db.product.deleteMany({}); // memnghapus record product
-        const deleteRecordComment = await db.comment.deleteMany({});
+//         db.mongoose.connect(db.url, mongooseConfig)
+//     .then(() => console.log("Database Connected"))
+//     .catch((err) => {
+//         console.log(err.message)
+//         process.exit()
+// })
+        await db.mongoose.connect(db.url, mongooseConfig)
+        await db.video.deleteMany({}); // memnghapus record video
+        await db.product.deleteMany({}); // memnghapus record product
+        await db.comment.deleteMany({});
 
-        const seedVideo = await db.video.insertMany(videoData);
-        const seedProduct = await db.product.insertMany(productData);
-        const seedComment = await db.comment.insertMany(commentData);
+        await db.video.insertMany(videoData);
+        await db.product.insertMany(productData);
+        await db.comment.insertMany(commentData);
 
         await mongoose.connection.close()
     } catch (error) {
-        console.log(error)
+        console.log(error);
+        process.exit();
     }
 }
 module.exports = seedDB

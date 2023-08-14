@@ -8,7 +8,7 @@ const seedDB = require("./app/config/seed")
 const app = express()
 
 const corsOptions = {
-    origin: ["https://tokopedia-play.vercel.app"],
+    origin: ["http://127.0.0.1:5173"],
     methods: ["POST","GET"],
     credentials: true
 }
@@ -16,28 +16,29 @@ const corsOptions = {
 app.use(cors(corsOptions))
 app.use(express.json());
 
-//seedDB() // isi db
+// isi db
+// seedDB() 
 
 // Konek ke db
 const mongooseConfig = {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }
-// db.mongoose.connect(db.url, mongooseConfig)
-//     .then(() => console.log("Database Connected"))
-//     .catch((err) => {
-//         console.log(err.message)
-//         process.exit()
-//     })
+db.mongoose.connect(db.url, mongooseConfig)
+    .then(() => console.log("Database Connected"))
+    .catch((err) => {
+        console.log(err.message)
+        process.exit()
+    })
+
+// app.get('/', (req, res) => { 
+//     res.send('Hey this is my API running 🥳')
+//   })
+// memanggil routes
+require("./app/routes/video.routes")(app)
+require("./app/routes/product.routes")(app)
+require("./app/routes/comment.routes")(app)
 app.listen(8000, () => {
     console.log(`Server Started at ${8000}`)
 })
-app.get('/', (req, res) => {
-    res.send('Hey this is my API running 🥳')
-  })
-// memanggil routes
-// require("./app/routes/video.routes")(app)
-// require("./app/routes/product.routes")(app)
-// require("./app/routes/comment.routes")(app)
-
 
