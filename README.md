@@ -15,6 +15,7 @@ file pertama yang akan dijalankan adalah server.js yang akan memanggil router ya
 ```
 npm i
 ```
+- Untuk seeding database matikan comment pada index.js line 20 
 - setelah node_modules yang dibutuhkan telah terunduh jalankan command
 ```
 npm start
