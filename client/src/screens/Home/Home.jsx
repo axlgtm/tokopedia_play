@@ -22,7 +22,7 @@ const Home = () => {
                  <div className='cards-container'>
                    {
                       video.length > 0 && video.map((item) => {
-                        return <CardVideo imageUrl={item.thumbnail_youtube} uuid={item.uuid} key={item.uuid}/>
+                        return <CardVideo imageUrl={item.thumbnail_youtube} uuid={item.uuid} key={item.uuid} id_youtube={item.id_youtube}/>
                       })
                    }
                  </div>
