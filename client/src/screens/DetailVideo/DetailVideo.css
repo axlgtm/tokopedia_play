@@ -43,13 +43,19 @@
     bottom: 0;
     margin: auto 0;
     right: 10px;
-    color: rgb(229, 224, 2);
 }
-.product-swiper__button::after {
-    content: ">";
-    font-size: 15px;
-    
+.product-swiper__button-left {
+    background-color: rgba(0,0,0,.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 10px;
 }
+
 .comment-box {
     display: flex;
     flex-direction: column;
@@ -64,4 +70,14 @@
 .comment-display__body{
     display: flex;
     flex-direction: column;
+}
+.arrow-right-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+}
+.arrow-right-wrap > img {
+    width: 25px;
 }

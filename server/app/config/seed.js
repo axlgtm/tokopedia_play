@@ -38,6 +38,12 @@ const videoData = [
         "id_youtube": "Wbn_rwhcWc8",
         "video_youtube": createVideoUrl("Wbn_rwhcWc8"),
         "thumbnail_youtube": createThumbnailVideo("Wbn_rwhcWc8")
+    },
+    {
+        "uuid": uuidv4(),
+        "id_youtube": "gyuP5cWyCUc",
+        "video_youtube": createVideoUrl("gyuP5cWyCUc"),
+        "thumbnail_youtube": createThumbnailVideo("gyuP5cWyCUc")
     }
 ]
 
@@ -46,21 +52,210 @@ const productData = [
         "uuid": uuidv4(),
         "video_id": videoData[0].uuid,
         "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
-        "title": "product 1",
+        "title": "Sapu",
         "price": "5000"
     },
     {
         "uuid": uuidv4(),
         "video_id": videoData[0].uuid,
         "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
-        "title": "product 2",
+        "title": "Katana",
         "price": "6000"
     },
     {
         "uuid": uuidv4(),
         "video_id": videoData[0].uuid,
         "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
-        "title": "product 3",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[0].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[0].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[1].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Sapu",
+        "price": "5000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[1].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Katana",
+        "price": "6000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[1].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[1].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[1].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[2].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Sapu",
+        "price": "5000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[2].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Katana",
+        "price": "6000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[2].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[2].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[2].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[3].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Sapu",
+        "price": "5000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[3].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Katana",
+        "price": "6000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[3].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[3].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[3].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[4].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Sapu",
+        "price": "5000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[4].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Katana",
+        "price": "6000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[4].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[4].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[4].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[5].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Sapu",
+        "price": "5000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[5].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Katana",
+        "price": "6000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[5].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "apple",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[5].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "pisang",
+        "price": "7000"
+    },
+    {
+        "uuid": uuidv4(),
+        "video_id": videoData[5].uuid,
+        "product_url": "https://tokopedia.link/1ZUJYBPoeCb",
+        "title": "Kursi",
         "price": "7000"
     }
 ]

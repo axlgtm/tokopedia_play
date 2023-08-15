@@ -6,7 +6,7 @@ const CardProduct = ({url, name}) => {
     return (
         <Link to={`${url}`} className="product-card">
             <div className="product-card__img--wrap">
-                <img src="https://img.youtube.com/vi/Nq4Mh_jTubA/sddefault.jpg" alt="" />
+                <img src="https://picsum.photos/300/200" alt="" />
             </div>
             <h1 className="product-card__name">{name}</h1>
         </Link>

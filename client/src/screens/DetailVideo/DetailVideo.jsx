@@ -4,10 +4,11 @@ import { CardProduct, CardComment, BubbleLoading } from "../../components";
 import { product as productRequest, comment as commentRequest, } from "../../services";
 import { useParams } from "react-router";
 import { useComment } from "../../hooks";
+import { arrowLeft, arrowRight } from "../../../public";
 
 
 const DetailVideo = () => {
-    const { uuid } = useParams();
+    const { uuid, id_youtube } = useParams();
     const [update, setUpdate] = useState(false);
     const [loading, comment] = useComment(uuid, update); 
     const [data, setData] = useState({
@@ -19,7 +20,8 @@ const DetailVideo = () => {
         comment: "",
         video_id: uuid
     })
-    const dummy = useRef(null);    
+    const dummy = useRef(null);
+    const dummy1 = useRef(null);    
 
     const getProduct = async (uuid) => {
         try {
@@ -33,18 +35,6 @@ const DetailVideo = () => {
             console.log(error);
         }
     }
-    // const getComment = async (uuid) => {
-    //     try {
-    //         const resp = await commentRequest.getComment(uuid);
-    //         setData((prev) => ({
-    //             ...prev,
-    //             "comment": resp.data.data
-    //         }));
-    //         setUpdate(false);
-    //     } catch (error) {
-    //         console.log(error)
-    //     }
-    // }
     const postComment = async (data) => {
         try {
             const resp = await commentRequest.postComment(data)
@@ -63,10 +53,18 @@ const DetailVideo = () => {
     return (
         <div className="detail-page">
             <div className="product-swiper">
+                <div className="product-swiper__button-left" onClick={() => {
+                        dummy1.current.scrollIntoView({ behavior: "smooth" });
+                    }}>
+                        <div className="arrow-right-wrap">
+                            <img src={arrowLeft} alt="" />
+                        </div>
+                </div>
                 <div className="product-swiper__wrapper">
+                <div ref={dummy1}/>
                     {
                         data.product.length > 0 && data.product.map((item => {
-                            return <CardProduct url={item.product_url} name={item.title} key={item.uuid}/>
+                            return <CardProduct url={item.product_url} name={item.title} key={item.uuid} />
                         })) 
                     }
                     <div ref={dummy}/>
@@ -74,11 +72,13 @@ const DetailVideo = () => {
                 <div className="product-swiper__button" onClick={() => {
                     dummy.current.scrollIntoView({ behavior: "smooth" });
                 }}>
-
+                    <div className="arrow-right-wrap">
+                        <img src={arrowRight} alt="" />
+                    </div>
                 </div>
             </div>
             <div className="videoWrapper">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameBorder="0" allowFullScreen className="video"></iframe>
+                <iframe src={`https://www.youtube.com/embed/${id_youtube}`} frameBorder="0" allowFullScreen className="video"></iframe>
             </div>
             <div className="comment-box">
                 <h1>Create a comment</h1>
